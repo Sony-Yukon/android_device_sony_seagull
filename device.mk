@@ -1,4 +1,4 @@
-# Copyright 2014 The Android Open Source Project
+# Copyright 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,10 +51,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.seagull
 
-# NFC config
-PRODUCT_PACKAGES += \
-    nfc_nci.seagull
-
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREBUILT_DPI := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
@@ -65,4 +61,4 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/yukon/platform.mk)
-$(call inherit-product, vendor/sony/yukon-seagull/seagull-vendor.mk)
+$(call inherit-product, vendor/sony/seagull/seagull-vendor.mk)
